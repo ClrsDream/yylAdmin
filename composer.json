@@ -1,51 +1,61 @@
 {
-    "name": "topthink/think",
-    "description": "the new thinkphp framework",
+    "name": "laravel/laravel",
     "type": "project",
+    "description": "The Laravel Framework.",
     "keywords": [
         "framework",
-        "thinkphp",
-        "ORM"
+        "laravel"
     ],
-    "homepage": "http://thinkphp.cn/",
-    "license": "Apache-2.0",
-    "authors": [
-        {
-            "name": "liu21st",
-            "email": "liu21st@gmail.com"
-        },
-        {
-            "name": "yunwuxin",
-            "email": "448901948@qq.com"
-        }        
-    ],
+    "license": "MIT",
     "require": {
-        "php": ">=7.1.0",
-        "topthink/framework": "^6.0.0",
-        "topthink/think-orm": "^2.0",
-        "firebase/php-jwt": "^5.2",
-        "topthink/think-multi-app": "^1.0",
-        "endroid/qr-code": "^3.7",
-        "topthink/think-captcha": "^3.0"
+        "php": "^7.2",
+        "fideloper/proxy": "^4.0",
+        "laravel/framework": "^6.2",
+        "laravel/tinker": "^2.0"
     },
     "require-dev": {
-        "symfony/var-dumper": "^4.2"
+        "facade/ignition": "^1.4",
+        "fzaninotto/faker": "^1.9.1",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^3.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
     },
     "autoload": {
         "psr-4": {
-            "app\\": "app"
+            "App\\": "app/"
         },
-        "psr-0": {
-            "": "extend/"
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
-    "config": {
-        "preferred-install": "dist"
-    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
-            "@php think service:discover",
-            "@php think vendor:publish"
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
         ]
     }
 }

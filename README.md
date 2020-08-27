@@ -1,96 +1,78 @@
-<h1>yylAdmin</h1>
+<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-Github | [码云](https://gitee.com/skyselang/yylAdmin)
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
-## 简介
+## About Laravel
 
-[yylAdmin](https://github.com/skyselang/yylAdmin) 是一个极简后台管理系统，只有登录注销、权限管理等基本功能，方便扩展；前后端分离，后端采用ThinkPHP6，前端采用Element2；项目由后端[yylAdmin](https://github.com/skyselang/yylAdmin)和前端[yylAdminWeb](https://github.com/skyselang/yylAdminWeb)组成。
-- [yylAdmin](https://github.com/skyselang/yylAdmin)
-- [yylAdminWeb](https://github.com/skyselang/yylAdminWeb)
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## 要求
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-- PHP >= 7.1
-- MySQL >= 5.6
-- Redis
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## 准备
+## Learning Laravel
 
-- [Git](https://git-scm.com/) 
-- [Node](https://nodejs.org/zh-cn/) 
-- [Composer](https://www.phpcomposer.com/) 
-- [ThinkPHP](https://www.kancloud.cn/manual/thinkphp6_0/1037479) 
-- [Element](https://element.eleme.cn/#/zh-CN/component/installation) 
-- [PhpStudy](https://www.xp.cn/) 
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-## 开发
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-PHP部分
-```bash
-# 克隆项目
-git clone https://github.com/skyselang/yylAdmin.git
+## Laravel Sponsors
 
-# 进入项目目录
-cd yylAdmin
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-# 安装依赖
-composer install
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[British Software Development](https://www.britishsoftware.co)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- [UserInsights](https://userinsights.com)
+- [Fragrantica](https://www.fragrantica.com)
+- [SOFTonSOFA](https://softonsofa.com/)
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
+- [CodeBrisk](https://codebrisk.com)
+- [1Forge](https://1forge.com)
+- [TECPRESSO](https://tecpresso.co.jp/)
+- [Runtime Converter](http://runtimeconverter.com/)
+- [WebL'Agence](https://weblagence.com/)
+- [Invoice Ninja](https://www.invoiceninja.com)
+- [iMi digital](https://www.imi-digital.de/)
+- [Earthlink](https://www.earthlink.ro/)
+- [Steadfast Collective](https://steadfastcollective.com/)
+- [We Are The Robots Inc.](https://watr.mx/)
+- [Understand.io](https://www.understand.io/)
+- [Abdel Elrafa](https://abdelelrafa.com)
+- [Hyper Host](https://hyper.host)
+- [Appoly](https://www.appoly.co.uk)
+- [OP.GG](https://op.gg)
 
-# 可以通过如下操作解决 composer 下载速度慢的问题
-composer config repo.packagist composer https://packagist.phpcomposer.com
+## Contributing
 
-# 配置环境（PhpStudy）
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-# 导入数据库
-```
-WEB部分
-```bash
-# 克隆项目
-git clone https://github.com/skyselang/yylAdminWeb.git
+## Code of Conduct
 
-# 进入项目目录
-cd yylAdminWeb
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-# 安装依赖
-npm install
+## Security Vulnerabilities
 
-# 可以通过如下操作解决 npm 下载速度慢的问题
-npm install --registry=https://registry.npm.taobao.org
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-# 启动服务
-npm run dev
-```
-在 .env* 环境变量文件 修改接口地址
+## License
 
-浏览器访问 http://localhost:9527
-
-账号：yyladmin，密码：123456
-
-## 发布
-
-```bash
-# 构建测试环境
-npm run build:stage
-
-# 构建生产环境
-npm run build:prod
-```
-
-## 其它
-
-```bash
-# 预览发布环境效果
-npm run preview
-
-# 预览发布环境效果 + 静态资源分析
-npm run preview -- --report
-
-# 代码格式检查
-npm run lint
-
-# 代码格式检查并自动修复
-npm run lint -- --fix
-```
-<img width="100%" src="./public/static/img/yyladmin_login.jpg">
-
-<img width="100%" src="./public/static/img/yyladmin.jpg">
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
